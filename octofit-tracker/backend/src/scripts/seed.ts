@@ -24,13 +24,13 @@ async function seedDatabase() {
       {
         name: 'Alex Kim',
         email: 'alex@example.com',
-        passwordHash: 'hash_alex_123',
+        passwordHash: '$2b$12$5UKsV5ic24N8B9wHAQJ6Nu4xRBmCF6DWsQvM95quXVGqIj4gmd0Ti',
         profile: { age: 28, level: 'intermediate', goals: ['fat loss', 'endurance'] },
       },
       {
         name: 'Priya Singh',
         email: 'priya@example.com',
-        passwordHash: 'hash_priya_123',
+        passwordHash: '$2b$12$U6aYxJ2nBrIPM1S4R7me4uYp5Oa4Jj7Q6CwQ6vul2xV6d1lqn.e0W',
         profile: { age: 33, level: 'advanced', goals: ['strength'] },
       },
     ]);

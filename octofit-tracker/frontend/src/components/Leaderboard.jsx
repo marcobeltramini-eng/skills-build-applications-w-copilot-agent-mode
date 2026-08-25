@@ -7,10 +7,12 @@ const apiUrl = codespaceName
 
 const getEntries = (payload) => {
   if (Array.isArray(payload)) {
-    return payload[0]?.entries ?? []
+    const globalBoard = payload.find((board) => board.scope === 'global')
+    return globalBoard?.entries ?? payload[0]?.entries ?? []
   }
   if (Array.isArray(payload?.results)) {
-    return payload.results[0]?.entries ?? []
+    const globalBoard = payload.results.find((board) => board.scope === 'global')
+    return globalBoard?.entries ?? payload.results[0]?.entries ?? []
   }
   return []
 }
