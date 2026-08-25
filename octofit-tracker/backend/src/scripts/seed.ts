@@ -85,6 +85,7 @@ async function seedDatabase() {
     metroMovers.members = [userByName['Mia Chen']._id, userByName['Ethan Brooks']._id];
     metroMovers.captain = userByName['Ethan Brooks']._id;
 
+    
     await trailTitans.save();
     await metroMovers.save();
 
